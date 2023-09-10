@@ -1,4 +1,3 @@
-import image from './assets/image.jpg'
 import './ImageBrand.css';
 
 function ImageBrand() {

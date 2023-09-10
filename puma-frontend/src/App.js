@@ -7,8 +7,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Promotion />
+      <Promotion title="Extra 10% off on orders above ₹3499"/>
       <ImageBrand />
+
+      <Promotion title="Extra 15% off on orders above ₹4499"/>
+
     </div>
   );
 }

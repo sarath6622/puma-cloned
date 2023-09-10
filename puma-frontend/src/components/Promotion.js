@@ -1,9 +1,9 @@
 import './Promotion.css';
 
-function Promotion() {
+function Promotion(props) {
   return (
     <div className="Promotion">
-      <h3>Extra 10% off on orders above ₹3499</h3>
+      <h3>{props.title}</h3>
       <p>Discount auto-applied at checkout</p>
     </div>
   );

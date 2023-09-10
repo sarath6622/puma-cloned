@@ -1,8 +1,13 @@
-.header{
+header{
     display: flex;
     flex-direction: row;
-    background-color: black;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.Header{
+    background-color: black;
 }
 
 li{
@@ -17,9 +22,31 @@ ul{
 
 a{
     color: white;
-
+    text-decoration: none;
+    border: 2px solid black;
 }
 
+a:hover{
+    border-bottom: 1px solid rgb(218, 187, 14);
+}
+
+a:not(:hover) {
+  color: #ddd; /* Dull white color for other links */
+}
+
+a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0); /* Start with no width */
+    transition: transform 1s ease; /* Add a smooth transition effect */
+}
+    
 .login{
     display: flex;
     align-items: center;

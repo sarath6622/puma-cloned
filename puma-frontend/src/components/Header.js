@@ -4,13 +4,13 @@ import { FaHeart,FaShoppingCart,FaUserAlt,FaSearch } from "react-icons/fa";
 function Header() {
   return (
     <div className="Header">
-      <header className="header">
+      <header>
 
       <div className="links">
       <ul>
             <li><a href="https://in.puma.com/">New & Trending</a></li>
             <li><a href="https://in.puma.com/">Women</a></li>
-            <li><a href="https://in.puma.com/">Menss</a></li>
+            <li><a href="https://in.puma.com/">Men</a></li>
             <li><a href="https://in.puma.com/">Kids & Teen</a></li>
             <li><a href="https://in.puma.com/">Motor Sport</a></li>
             <li><a href="https://in.puma.com/">Collaboration</a></li>
