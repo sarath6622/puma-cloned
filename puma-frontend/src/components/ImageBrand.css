@@ -1,0 +1,26 @@
+.image {
+    background-image: url(./assets/image.jpg);
+    height: 500px;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 100px;
+}
+
+h1{
+    margin: 0;
+}
+
+.buttonGroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    background-color: black;
+    color: white;
+}
