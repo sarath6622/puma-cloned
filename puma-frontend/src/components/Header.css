@@ -30,6 +30,10 @@ a:hover{
     border-bottom: 1px solid rgb(218, 187, 14);
 }
 
+a:hover .popup {
+    display: block;
+  }
+
 a:not(:hover) {
   color: #ddd; /* Dull white color for other links */
 }
@@ -46,7 +50,7 @@ a:hover::after {
     transform: scaleX(0); /* Start with no width */
     transition: transform 1s ease; /* Add a smooth transition effect */
 }
-    
+
 .login{
     display: flex;
     align-items: center;

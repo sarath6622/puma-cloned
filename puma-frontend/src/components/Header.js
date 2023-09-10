@@ -1,5 +1,6 @@
 import './Header.css';
 import { FaHeart,FaShoppingCart,FaUserAlt,FaSearch } from "react-icons/fa";
+import Popup from './Popup.js';
 
 function Header() {
   return (
@@ -8,7 +9,12 @@ function Header() {
 
       <div className="links">
       <ul>
-            <li><a href="https://in.puma.com/">New & Trending</a></li>
+            <li>
+            <Popup
+              linkText="New & Trending"
+              popupContent={<div>Popup content for New & Trending</div>}
+            />
+            </li>
             <li><a href="https://in.puma.com/">Women</a></li>
             <li><a href="https://in.puma.com/">Men</a></li>
             <li><a href="https://in.puma.com/">Kids & Teen</a></li>
