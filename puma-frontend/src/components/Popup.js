@@ -1,19 +1,9 @@
-import React, { useState } from 'react';
 import './Popup.css';
 
-function Popup({ linkText, popupContent }) {
-  const [isPopupVisible, setPopupVisible] = useState(false);
-
-  const togglePopup = () => {
-    setPopupVisible(!isPopupVisible);
-  };
-
+function Popup() {
   return (
-    <div className="container" onMouseEnter={togglePopup} onMouseLeave={togglePopup}>
-      <a href="#" className="link">
-        {linkText}
-      </a>
-      {isPopupVisible && <div className="popup">{popupContent}</div>}
+    <div className='popup'>
+      <h1>NEW & TRENDING</h1>
     </div>
   );
 }

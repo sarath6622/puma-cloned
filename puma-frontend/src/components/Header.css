@@ -4,6 +4,8 @@ header{
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .Header{
@@ -23,19 +25,18 @@ a{
     color: white;
     text-decoration: none;
     margin: 10px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+
 }
 
 a:hover{
-    border-bottom: 1px solid rgb(218, 187, 14);
+    border-bottom: 2px solid rgb(218, 187, 14);
 }
 
 a:hover .popup {
     display: block;
 }
 
-a:not(:hover) {
-  color: #ddd; /* Dull white color for other links */
-}
 
 a:hover::after {
     content: '';
@@ -63,8 +64,7 @@ a:hover::after {
 /* Style the input container */
 .input-container {
     display: flex;
-    border: 2px solid #007BFF; /* Border for the input container */
-    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ffffff; /* Border for the input container */
 }
 
 /* Style the search input */
@@ -74,11 +74,12 @@ a:hover::after {
     width: 100px; /* Adjust the width as needed */
     outline: none;
     font-size: 16px;
+    background-color: black;
 }
 
 /* Style the search button */
 .search-button {
-    background-color: #007BFF;
+    background-color: #ffffff;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -96,3 +97,59 @@ a:hover::after {
     background-color: #0056b3;
 }
 
+.div-to-display {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+  
+  .visible {
+    display: flex;
+    width: 100%;
+    top: 7.5%;
+    z-index: 1; 
+  }
+
+  .dropdown-content-main{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  .dropdown-content-main > a{
+    padding: 5px;
+  }
+
+  .dropdown-content-right{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .content-item{
+    color: black;
+    border-bottom: none;
+  }
+  
+  .header-underline{
+    border-bottom: 2px solid black;
+    width: 200px;
+    display: block;
+  }
+
+  .dropdown-content-right-items{
+    padding: 30px;
+    padding-right: 10px;
+
+  }
+
+  .subcategories{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subcategories > li {
+    padding: 5px;
+    color: rgb(88, 88, 88);
+  }

@@ -1,26 +1,4 @@
-/* PopupComponent.css */
-.container {
-  position: relative;
-  display: inline-block;
-}
-
-.link {
-  text-decoration: none;
-}
-
-
-.popup {
-  position: absolute;
-  display: none;
-  background-color: #f0f0f0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: max-content;
-  white-space: nowrap; /* Prevent wrapping if content is too long */
-}
-
-.container:hover .popup {
-  display: block;
+.popup{
+    background-color: antiquewhite;
+    display: relative;
 }
