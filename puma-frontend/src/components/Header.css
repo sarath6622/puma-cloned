@@ -13,7 +13,6 @@ header{
 li{
     list-style-type: none;
     display: flex;
-    padding: 10px;
 }
 
 ul{
@@ -23,7 +22,7 @@ ul{
 a{
     color: white;
     text-decoration: none;
-    border: 2px solid black;
+    margin: 10px;
 }
 
 a:hover{
@@ -32,7 +31,7 @@ a:hover{
 
 a:hover .popup {
     display: block;
-  }
+}
 
 a:not(:hover) {
   color: #ddd; /* Dull white color for other links */

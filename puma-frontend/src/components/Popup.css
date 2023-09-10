@@ -1,28 +1,26 @@
 /* PopupComponent.css */
 .container {
-    position: relative;
-  }
-  
-  .link {
-    text-decoration: none;
-  }
-  
-  .popup {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: max-content;
-    right: 0; /* Set right to 0 to make it span the entire width */
-    display: none;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  .container:hover .popup {
-    display: block;
-  }
-  
+  position: relative;
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+.popup {
+  position: absolute;
+  display: none;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  white-space: nowrap; /* Prevent wrapping if content is too long */
+}
+
+.container:hover .popup {
+  display: block;
+}

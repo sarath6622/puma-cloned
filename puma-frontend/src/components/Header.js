@@ -1,6 +1,8 @@
 import './Header.css';
 import { FaHeart,FaShoppingCart,FaUserAlt,FaSearch } from "react-icons/fa";
 import Popup from './Popup.js';
+import PopupContent from './PopupComponents/PopupContent';
+
 
 function Header() {
   return (
@@ -9,19 +11,15 @@ function Header() {
 
       <div className="links">
       <ul>
-            <li>
-            <Popup
-              linkText="New & Trending"
-              popupContent={<div>Popup content for New & Trending</div>}
-            />
-            </li>
-            <li><a href="https://in.puma.com/">Women</a></li>
-            <li><a href="https://in.puma.com/">Men</a></li>
-            <li><a href="https://in.puma.com/">Kids & Teen</a></li>
-            <li><a href="https://in.puma.com/">Motor Sport</a></li>
-            <li><a href="https://in.puma.com/">Collaboration</a></li>
-            <li><a href="https://in.puma.com/">Sports</a></li>
-            <li><a href="https://in.puma.com/">Outlets</a></li>
+            <li><Popup linkText="New & Trending" popupContent={<PopupContent />} /></li>
+            <li><Popup linkText="Men" popupContent={<PopupContent />} /></li>
+            <li><Popup linkText="Women" popupContent={<PopupContent />} /></li>
+            <li><Popup linkText="Kids & Teen" popupContent={<PopupContent />} /></li>
+            <li><Popup linkText="Motor Sport" popupContent={<PopupContent />} /></li>
+            <li><Popup linkText="Collaboration" popupContent={<PopupContent />} /></li>
+            <li><Popup linkText="Sports" popupContent={<PopupContent />} /></li>
+            <li><Popup linkText="Outlets" popupContent={<PopupContent />} /></li>
+
         </ul>
       </div>
       <div className="login">
