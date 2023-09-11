@@ -75,6 +75,8 @@ a:hover::after {
     outline: none;
     font-size: 16px;
     background-color: black;
+    color: white;
+
 }
 
 /* Style the search button */
@@ -83,6 +85,7 @@ a:hover::after {
     border: none;
     padding: 10px;
     cursor: pointer;
+    color: white;
     transition: background-color 0.3s ease;
 }
 
@@ -133,7 +136,8 @@ a:hover::after {
   }
   
   .header-underline{
-    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(218, 187, 14);
     width: 200px;
     display: block;
   }
